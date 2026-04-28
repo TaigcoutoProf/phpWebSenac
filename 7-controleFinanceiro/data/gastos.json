@@ -1,3 +1,16 @@
 [
-    
+    {
+        "id": "69f0c4538af3e",
+        "data": "2026-04-28",
+        "descricao": "Teste",
+        "valor": 89.9,
+        "tipo": "Sa\u00edda"
+    },
+    {
+        "id": "69f0c78e787b8",
+        "data": "2026-04-15",
+        "descricao": "Teste",
+        "valor": 89.9,
+        "tipo": "Sa\u00edda"
+    }
 ]
