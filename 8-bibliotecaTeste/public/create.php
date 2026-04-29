@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $ano    = trim($_POST['ano'] ?? '');
 
     if ($titulo === '' || $autor === '' || $isbn === '' || $ano === '') {
-        $erro = "Preenche todos os campos.";
+        $erro = "Preencha todos os campos.";
     } elseif (!is_numeric($ano)) {
         $erro = "Ano inválido (usa apenas números).";
     } else {

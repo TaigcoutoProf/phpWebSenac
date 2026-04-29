@@ -66,9 +66,9 @@ $gastos = ler_gastos();
 
       
         <td>
-        editar.php?id=<?php echo $g['id']; ?>Editar</a>
+        update.php?id=<?php echo $g['id']; ?>Editar</a>
 
-        excluir.php">
+        delete.php">
             <input type="hidden" name="id" value="<?php echo $g['id']; ?>">
             <button type="submit">Excluir</button>
         </form>
