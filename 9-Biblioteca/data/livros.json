@@ -7,10 +7,17 @@
         "ano": "1943"
     },
     {
-        "id": "69f2055355b61",
+        "id": "69f8b4461eeca",
         "titulo": "Dom Casmurro",
         "autor": "Machado de Assis",
-        "isbn": "978-85-235-0000-222",
+        "isbn": "978-85-235-0000-224",
         "ano": "1899"
+    },
+    {
+        "id": "69f8b474c5653",
+        "titulo": "João e o Pé de Feijão",
+        "autor": "Machado de Assis",
+        "isbn": "1234",
+        "ano": "2026"
     }
 ]

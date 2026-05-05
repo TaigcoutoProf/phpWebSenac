@@ -12,8 +12,8 @@ function ler_livros(): array {
     $dados = json_decode($conteudo,true);
 
     return is_array($dados) ? $dados : [];
-
 }
+
 function guardar_livros(array $livros): void {
     $ficheiro = caminho_json();
     file_put_contents(

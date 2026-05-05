@@ -40,7 +40,7 @@ $livros = ler_livros();
 
             <td class="acoes">
                 <a class="btn btn-primary" href="update.php?id=<?php echo $l['id'];?>" >Editar</a>
-                <form action="detele.php" method="POST" style="display:inline">
+                <form action="delete.php" method="POST" style="display:inline">
                     <input type="hidden" name="id" value="<?php echo $l['id'];?>">
                     <button type="submit" class="btn btn-primary" onclick="return confirm('Excluir este livro?')">
                     Excluir</button>
