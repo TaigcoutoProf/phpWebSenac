@@ -1,9 +1,9 @@
 <?php
 session_start();
-require "conexao.php";
+require_once __DIR__ . "/conexao.php";
 
-$email = $_POST['email'] ?? '';
-$senha = $_POST['senha'] ?? '';
+$email = trim($_POST['email'] ?? '');
+$senha = trim($_POST['senha'] ?? '');
 
 $sql = "SELECT * FROM usuarios WHERE email = '$email'";
 $resultado = mysqli_query($conexao, $sql);

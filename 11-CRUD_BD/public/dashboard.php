@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (!isset($_SESSION['user_id'])) {
+if (!isset($_SESSION['user'])) {
     header('Location: index.php');
     exit;
 }
@@ -15,9 +15,8 @@ if (!isset($_SESSION['user_id'])) {
 
 <div class="container">
     <h1>Área Restrita</h1>
-    <p>Bem-vindo, <?= $_SESSION['user_nome'] ?></p>
+    <p>Bem-vindo, <?= $_SESSION['user'] ?></p>
 
-    <a href="editar.php">Editar informações</a>
     <a href="logout.php">Sair</a>
 </div>
 
