@@ -12,7 +12,9 @@ if ($row = mysqli_fetch_assoc($resultado)) {
 
     if ($row['senha'] === $senha) {
 
-        $_SESSION['user'] = $row['nome'];
+        $_SESSION['user_id'] = $row['id'];
+        $_SESSION['user_nome'] = $row['nome'];
+        $_SESSION['user_email'] = $row['email'];
 
         header("Location: ../public/dashboard.php");
         exit;
@@ -24,5 +26,3 @@ if ($row = mysqli_fetch_assoc($resultado)) {
     echo "Usuário não encontrado";
 }
 
-header("Location: ../public/index.php");
-exit;
