@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AJAX + JSON + PHP + MySQL</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cadastro de <span>Usuários</span></h1>
+      <p class="subtitle">
+        Preencha os campos abaixo para registrar um novo usuário.
+      </p>
+
+      <div class="input-group">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" placeholder="Ex: Tainá Couto" />
+      </div>
+
+      <div class="input-group">
+        <label for="nome">Idade</label>
+        <input type="text" id="idade" placeholder="Ex: 30" />
+      </div>
+
+      <div class="input-group">
+        <label for="nome">Cidade</label>
+        <input type="text" id="cidade" placeholder="Ex: Pindamonhangaba" />
+      </div>
+
+      <div class="input-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" placeholder="Ex: taina@email.com" />
+      </div>
+
+      <button id="btnSalvar">Salvar usuário</button>
+
+      <div class="divider"></div>
+
+      <h2>Usuários cadastrados</h2>
+
+      <div id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
